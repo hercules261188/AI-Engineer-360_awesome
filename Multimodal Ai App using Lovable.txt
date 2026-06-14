@@ -1,0 +1,164 @@
+Build a modern production-ready AI Screenshot Explainer web application using Next.js 15, TypeScript, Tailwind CSS, and Gemini 2.5 Flash API.
+
+Project Name:
+AI Screenshot Explainer
+
+Goal:
+Users can upload any screenshot, image, error screenshot, dashboard screenshot, code screenshot, website screenshot, or application screenshot. The AI should analyze the image and provide a detailed explanation of what is visible in the screenshot.
+
+Core Features:
+
+1. Screenshot Upload
+- Drag and drop upload area
+- Support PNG, JPG, JPEG, WEBP
+- Maximum file size 10 MB
+- Preview uploaded image before analysis
+
+2. Gemini Vision Analysis
+- Use Gemini 2.5 Flash API
+- Analyze uploaded screenshot
+- Extract visible text
+- Understand image context
+- Explain what is happening in the screenshot
+- Detect possible errors if visible
+- Provide suggestions and recommendations
+
+3. Analysis Sections
+Display AI response in professional cards:
+
+A. Screenshot Summary
+- What is shown in the screenshot
+
+B. Extracted Text
+- OCR-style extracted text
+
+C. Context Understanding
+- Explain screen purpose and content
+
+D. Issues Detected
+- Potential errors or warnings
+
+E. Recommendations
+- Suggested next actions
+
+4. Loading Experience
+- Professional skeleton loaders
+- Progress indicators
+- Smooth animations
+- Streaming-like experience
+
+5. History Section
+- Store last 10 analyses in local storage
+- Allow reopening previous analyses
+
+6. Copy Features
+- Copy analysis
+- Copy extracted text
+
+UI Requirements
+
+Create a modern SaaS-quality interface.
+
+Design Style:
+- Clean modern AI SaaS
+- Inspired by ChatGPT, Vercel, Linear
+- Professional dashboard feel
+- Fully responsive
+- Dark mode by default
+- Mobile friendly
+
+Layout:
+- Navbar
+- Hero section
+- Upload section
+- Analysis results section
+- Analysis history section
+
+Color Palette:
+- Modern dark theme
+- Professional gradients
+- Clean typography
+- Premium appearance
+
+Security Requirements
+
+IMPORTANT:
+Implement security best practices.
+
+- Gemini API key must never be exposed on frontend
+- Use server-side API routes
+- Validate file types
+- Validate file size
+- Sanitize user inputs
+- Handle API errors gracefully
+- Prevent client-side API abuse
+- Implement rate limiting
+- Secure environment variables
+- Add proper try/catch blocks
+- Add request validation
+
+Architecture Requirements
+
+Frontend:
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- React Hooks
+
+Backend:
+- Next.js Route Handlers
+- Secure Gemini API integration
+- Server-side processing
+
+Gemini Integration:
+
+Use Google Gemini Vision Model.
+
+Create a secure backend endpoint.
+
+System Prompt:
+
+"You are an expert AI Screenshot Analyst. Analyze screenshots, images, dashboards, code screenshots, websites, applications, and user interfaces. Explain what is visible in simple professional language. Extract important text. Identify possible issues if present. Provide actionable recommendations. Never hallucinate information that is not visible in the image."
+
+Response Format:
+
+{
+  "summary": "",
+  "extractedText": "",
+  "contextUnderstanding": "",
+  "issuesDetected": [],
+  "recommendations": []
+}
+
+Developer Requirements
+
+- Production-ready folder structure
+- Reusable components
+- Clean architecture
+- Type-safe code
+- Error boundaries
+- Loading states
+- Empty states
+- Responsive design
+- Well-commented code
+
+Bonus Features
+
+- Analyze code screenshots
+- Analyze error screenshots
+- Analyze dashboard screenshots
+- Analyze website screenshots
+- Download analysis as PDF
+- Share analysis feature
+
+Expected Result
+
+A professional production-ready AI Screenshot Explainer that demonstrates:
+- Multimodal AI
+- Vision APIs
+- OCR
+- Image Understanding
+- Gemini Vision Capabilities
+- Secure AI Application Development
+
+Generate complete production-ready code.
